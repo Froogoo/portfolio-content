@@ -169,7 +169,7 @@ main.gallery h1{
             'header header header header header header'
             'aside main main main main main'
             'aside main main main main main'
-            'footer footer footer footer footer footer'
+            'footer footer footer footer footer footer';
     }
     main.gallery{
         flex-direction: row;
@@ -190,7 +190,7 @@ main.gallery h1{
         'header'
         'main'
         'aside'
-        'footer'
+        'footer';
     }
     main.gallery{
         flex-direction: column;
