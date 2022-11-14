@@ -1,5 +1,5 @@
 body{
-	font-family:"Poppins", sans-serif;
+	font-family:"p", sans-serif;
     margin: 0;
 }
 
@@ -186,6 +186,7 @@ main.gallery h1{
     footer{ grid-area: footer; }
     body{
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
         'header'
         'main'
