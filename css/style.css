@@ -156,7 +156,17 @@ main.gallery h1{
         animation: none;
     }
 }
+@media screen and (max-width: 480px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
 
+    main.gallery{
+        flex-direction: column;
+    }
+}
 @media screen and (min-width: 481px){
     header { grid-area: header; }
     main { grid-area: main; }
@@ -175,25 +185,5 @@ main.gallery h1{
         flex-direction: row;
         flex-wrap:wrap;
         justify-content:center;
-    }
-
-}
-@media screen and (max-width: 480px){
-    header { grid-area: header; }
-    main { grid-area: main; }
-    aside{ grid-area: aside; }
-    label{ grid-area: label; }
-    footer{ grid-area: footer; }
-    body{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'header'
-        'main'
-        'aside'
-        'footer';
-    }
-    main.gallery{
-        flex-direction: column;
     }
 }
