@@ -72,6 +72,8 @@ aside{
     background: rgba(131, 118, 125, 0.8);
     color: darkred;
     font-size: 5px;
+	align-content:center;
+
 }
 p{
     font-size: 20px;
@@ -162,7 +164,11 @@ main.gallery h1{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
     }
-
+	header{grid-row:1;}
+	main{grid-row:2;}
+	aside{grid-row:3;}
+	label{grid-row:4;}
+	footer{grid-row:5;}
     main.gallery{
         flex-direction: column;
     }
