@@ -84,7 +84,7 @@ p{
 
 img.gallery{
     transition: .5s ease;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -98,7 +98,7 @@ figure.gallery {
 
 img{
     transition: .5s ease;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
     border: 1px antiquewhite;
     border-style: double;
