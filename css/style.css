@@ -160,7 +160,7 @@ main.gallery h1{
 }
 @media screen 
 	and (min-device-width: 320px)
-	and (max-width: 480px){
+	and (max-device-width: 480px){
     body{
         display: grid;
         grid-template-columns: 1fr;
@@ -175,7 +175,7 @@ main.gallery h1{
         flex-direction: column;
     }
 }
-@media screen and (min-width: 481px){
+@media screen and (max-device-width: 481px){
     header { grid-area: header; }
     main { grid-area: main; }
     aside{ grid-area: aside; }
