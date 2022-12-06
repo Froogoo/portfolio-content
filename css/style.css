@@ -8,17 +8,17 @@ body.container{
     height: 100vh;
     grid-template-areas:
     "header header header header"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
-    "nav main main main"
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
     "aside aside aside aside"
     "footer footer footer footer";
 }
@@ -44,7 +44,7 @@ body{
     /* margin: 0; */
 }
 li {
-    padding: 200px 0;
+    padding: 20px 0;
 }
 #contactback{
     background-image: url('../images/background1.JPG');
@@ -67,18 +67,21 @@ head{
     color: darkred;
 }
 header{
-    background: rgba(98, 68, 83, 0.253);;
+    background: rgba(98, 68, 83, 0.253);
 }
+
 nav{
     background: rgb(0, 0, 0);
     display: block;
     text-transform: uppercase;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 5px 0;
     width: 100%;
     height: auto;
     text-align: center;
+
 }
+
 
 #pagenow {
     /* display: inline; */
@@ -283,7 +286,10 @@ figure.gallery {
     /* gap: 10%; */
 
 }
-
+@media (prefers-reduced-motion) {
+    #noise{
+        animation: none;}
+}
 #noise {
     position: fixed;
     top: 0;
@@ -317,10 +323,6 @@ figure.gallery {
 @-webkit-keyframes grain2{0%,to{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2%,1%);transform:translate(-2%,1%)}40%{-webkit-transform:translate(5%,5%);transform:translate(5%,5%)}60%{-webkit-transform:translate(3%,1%);transform:translate(3%,1%)}80%{-webkit-transform:translate(5%,7%);transform:translate(5%,7%)}}
 @keyframes grain2{0%,to{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-3%,1%);transform:translate(-3%,1%)}40%{-webkit-transform:translate(5%,5%);transform:translate(5%,5%)}60%{-webkit-transform:translate(3%,1%);transform:translate(3%,1%)}80%{-webkit-transform:translate(5%,7%);transform:translate(5%,7%)}}
 
-@media (prefers-reduced-motion) {
-    #noise{
-        animation: none;}
-}
 
 @media screen and (min-device-width: 768px){
     body.container{
@@ -349,9 +351,18 @@ figure.gallery {
     nav {
         grid-area: nav;
         position: relative;
-        display: block;
-        justify-content: space-between;
     }
+    nav{
+        background: rgb(0, 0, 0);
+        display: block;
+        text-transform: uppercase;
+        justify-content: space-between;
+        padding: 20px 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
     aside {
         grid-area: aside;
     }
@@ -377,12 +388,12 @@ figure.gallery {
         max-height: 100%;
         grid-template-areas:
         "header header header header header header header"
-        "nav main main main main main main"
-        "nav main main main main main main"
-        "nav main main main main main main"
-        "nav main main main main main main"
-        "nav main main main main main main"
-        "nav main main main main main main"
+        "nav nav nav nav nav nav nav"
+        "main main main main main main main"
+        "main main main main main main main"
+        "main main main main main main main"
+        "main main main main main main main"
+        "main main main main main main main"
         "aside aside aside aside aside aside aside"
         "footer footer footer footer footer footer footer";
     }
@@ -392,8 +403,15 @@ figure.gallery {
     nav {
         grid-area: nav;
         position: relative;
-        display: block;
         justify-content: space-between;
+    }
+    nav{
+        background: rgb(0, 0, 0);
+        text-transform: uppercase;
+        padding: 20px 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
     aside {
         grid-area: aside;
@@ -407,6 +425,8 @@ figure.gallery {
         padding: 1rem;
     }
     li {
-        padding: 70px 0;
+        padding: 70px 70px;
+        display: inline;
+        justify-content: space-between;
     }
 }
