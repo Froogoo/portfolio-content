@@ -65,6 +65,17 @@ head{
     font-size: 10px;
     font-weight: bold;
     color: darkred;
+    /* position: absolute; */
+    left: 100px;
+    z-index: 999;
+    padding: 0 1em;
+    width: 100px;
+}
+.skip-to-content-link:focus {
+    left: 80%;
+    transform: translateX(80%);
+    opacity: 10;
+    width: 100px;
 }
 header{
     background: rgba(98, 68, 83, 0.253);
