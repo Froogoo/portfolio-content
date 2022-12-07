@@ -298,9 +298,12 @@ figure.gallery {
 
 }
 @media (prefers-reduced-motion) {
-    #noise{
-        animation: none;}
-}
+        #noise:before{
+            background: none;
+            animation-duration: 0s;
+            animation-fill-mode: forwards;
+        }
+    }
 #noise {
     position: fixed;
     top: 0;
@@ -388,6 +391,13 @@ figure.gallery {
     li {
         padding: 100px 0;
     }
+    @media (prefers-reduced-motion) {
+        #noise:before{
+            background: none;
+            animation-duration: 0s;
+            animation-fill-mode: forwards;
+        }
+    }
 }
 @media screen and (min-device-width: 1200px){
     body.container{
@@ -439,5 +449,12 @@ figure.gallery {
         padding: 70px 70px;
         display: inline;
         justify-content: space-between;
+    }
+    @media (prefers-reduced-motion) {
+        #noise:before{
+            background: none;
+            animation-duration: 0s;
+            animation-fill-mode: forwards;
+        }
     }
 }
